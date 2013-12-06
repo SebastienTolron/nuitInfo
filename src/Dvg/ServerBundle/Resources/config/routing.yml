@@ -1,0 +1,9 @@
+dvg_server_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: DvgServerBundle:Default:index }
+dvg_server_accesbase:
+    pattern:  /famille/{pConcept}
+    defaults: {_controller: DvgServerBundle:Default:famille }
+dvg_server_homepage:
+    pattern:  /amazon/{keywords}
+    defaults: { _controller: DvgServerBundle:Default:getAmazonProduct }

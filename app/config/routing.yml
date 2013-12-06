@@ -1,0 +1,4 @@
+dvg_server:
+    resource: "@DvgServerBundle/Resources/config/routing.yml"
+    prefix:   /
+

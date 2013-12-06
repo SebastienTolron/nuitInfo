@@ -1,0 +1,6 @@
+parameters:
+#    dvg_server.example.class: Dvg\ServerBundle\Example
+
+services:
+    dvg_server.amazon_api:
+        class: Dvg\ServerBundle\AmazonAPI\AmazonProductAPI
