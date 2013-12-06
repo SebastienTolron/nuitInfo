@@ -37,7 +37,6 @@ class DefaultController extends Controller
                 "link" => ((string) $product->DetailPageURL),
                 "image" => ((string) $product->MediumImage->URL)
             );
-            var_dump($prodAttr);
             array_push($products, $prodAttr);
         }
       //  var_dump($result);
