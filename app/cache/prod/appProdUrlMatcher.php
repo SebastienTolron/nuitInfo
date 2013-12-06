@@ -28,8 +28,13 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
         $request = $this->request;
 
         // dvg_server_homepage
-        if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'dvg_server_homepage')), array (  '_controller' => 'Dvg\\ServerBundle\\Controller\\DefaultController::indexAction',));
+        if (0 === strpos($pathinfo, '/amazon') && preg_match('#^/amazon/(?P<keywords>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'dvg_server_homepage')), array (  '_controller' => 'Dvg\\ServerBundle\\Controller\\DefaultController::getAmazonProductAction',));
+        }
+
+        // dvg_server_accesbase
+        if (0 === strpos($pathinfo, '/famille') && preg_match('#^/famille/(?P<pConcept>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'dvg_server_accesbase')), array (  '_controller' => 'Dvg\\ServerBundle\\Controller\\DefaultController::familleAction',));
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
