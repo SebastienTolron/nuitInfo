@@ -8,7 +8,7 @@ use Dvg\ServerBundle\AmazonClass\AmazonProductAPI;
 
 class DefaultController extends Controller
 {
-    public function indexAction($name)
+    public function indexAction()
     {
         return $this->render('DvgServerBundle::index.html.twig');
     }
