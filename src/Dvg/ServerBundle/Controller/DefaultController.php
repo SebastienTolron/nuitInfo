@@ -32,11 +32,12 @@ class DefaultController extends Controller
         foreach($result->Items->Item as $product)
         {
             $prodAttr = array(
-                "title" => $product->ItemAttributes->Title,
-                "price" => $product->OfferSummary->LowestNewPrice->FormattedPrice,
-                "link" => $product->DetailPageURL,
-                "image" => $product->MediumImage->URL
+                "title" => ((string) $product->ItemAttributes->Title),
+                "price" => ((string) $product->OfferSummary->LowestNewPrice->FormattedPrice),
+                "link" => ((string) $product->DetailPageURL),
+                "image" => ((string) $product->MediumImage->URL)
             );
+            var_dump($prodAttr);
             array_push($products, $prodAttr);
         }
       //  var_dump($result);
