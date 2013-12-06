@@ -19,7 +19,7 @@
         "sensio/framework-extra-bundle": "~3.0",
         "sensio/generator-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
-		"shuber/curl": "dev-master"
+        "shuber/curl": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
