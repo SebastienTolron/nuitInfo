@@ -1,5 +1,5 @@
 dvg_server_homepage:
-    pattern:  /hello/{name}
+    pattern:  /client
     defaults: { _controller: DvgServerBundle:Default:index }
 dvg_server_accesbase:
     pattern:  /famille/{pConcept}
