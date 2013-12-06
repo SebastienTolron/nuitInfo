@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Titre</title>
+		<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" />
+    </head>
+
+    <body>
+		<div id="headbar"> 
+			<h1>Que recherchez-vous?</h1>
+		</div>
+		
+		<div id="toolbox">
+			<div id="searchbar"></div>
+			<div id="icones">
+			</div>
+			<div id="trashcan">
+				<img src="{{ asset('images/poubelle.jpg') }}" width="50" height="50"/>
+			</div>
+		</div>
+		
+		<div id="searchbutton"><p>Rechercher!</p></div>
+		
+		<div id="workarea"></div>
+		
+		<script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/jquery-ui.js') }}"></script>
+		<script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
+    </body>
+</html>

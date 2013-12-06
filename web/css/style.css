@@ -1,0 +1,53 @@
+body {
+	margin : 0;
+	padding: 0;
+}
+
+#headbar {
+	margin-top: -70px;
+	padding: 0px;
+	text-align: center;
+	font-size: 3em;
+	background-color:LimeGreen;
+	height:200px;
+	line-height:200px; /* centrage vertical */
+	text-align:center;
+	color: AliceBlue;
+}
+
+#toolbox {
+	text-align:center;
+	width: 210px;
+	height: 100%;
+	position:fixed;
+	top:20.7%;
+	left: 85%;
+	background : Gainsboro;
+}
+
+#searchbutton {
+	position : absolute;
+	top : 90%;
+	left:  65%;
+	width :200px;
+	height: 50px;
+	background-color : LimeGreen;
+	margin :0 auto;
+	font-size: 2em;
+	font-family: arial;
+}
+
+#workarea {
+	background-color: AliceBlue;
+	width : 85%;
+	height: 750px;
+}
+
+#trashcan {
+	width:120px;
+	height:60px;
+	left: -500%;
+	top: 70%;
+	background-color: gray;
+	position:absolute;
+}
