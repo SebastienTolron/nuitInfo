@@ -34,9 +34,9 @@ $(function(){
 		}
 	});
 	
-	/*$("#searchbutton").click(function() {
+	$("#searchbutton").click(function() {
 		$.ajax({
-			url: "" + requete,
+			url: "http://82.239.36.10:82/nuitInfo/web/app_dev.php/amazon/" + requete,
 			cache : false,
 			dataType : "json",
 			error : function(request, error) {
@@ -47,6 +47,6 @@ $(function(){
 				alert(data);
 			}
 		});
-	});*/
+	});
 	
 });
